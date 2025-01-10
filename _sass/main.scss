@@ -1,3 +1,46 @@
-.current {
-  color: green;
+html, body {
+  font-family: "Averia Serif Libre", sans-serif;
 }
+
+body { 
+  background-color: #fcf8ec;
+}
+
+nav {
+  text-align: right;
+}
+
+a {
+  color: black;
+  text-decoration: none; 
+}
+
+.site-title {
+  font-size: 30px;
+}
+
+.site-intro {
+  width: 500px;
+}
+
+.post-title {
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.post-info {
+  text-align: center;
+}
+
+.post-intro {
+  font-size: 20px;
+}
+
+.post-contents {
+  font-size: 10px;
+}
+
+.header-links a {
+  margin-right: 10px;
+}
+
