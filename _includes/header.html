@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <nav class="header">
+      <div class="header-home">
+        {% for item in site.data.header %}
+          {%if item.name == "Home" %}
+            <a href="{{ item.link }}">
+              {{ item.name }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="header-other">
+        {% for item in site.data.header %}
+          {%unless item.name == "Home" %}
+            <a href="{{ item.link }}" >
+              {{ item.name }}
+            </a>
+          {% endunless %}
+        {% endfor %}
+      </div>
+    </nav>
+  </body>
+</html>
+
+
+

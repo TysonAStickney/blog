@@ -8,15 +8,37 @@ title: Home
   <head>
   </head>
   <body>
-    <div class="site-title">
-      <h1>Technology and it's Ethical Applications</h1>
-    </div>
+    <h1 class="site-title">
+      Lorem dolor <br> consectetur elit
+    </h1>
     <div class="site-intro">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, dui ac semper laoreet, lacus massa laoreet lorem, nec viverra augue metus quis tellus. Integer ac sem non orci gravida ullamcorper. Suspendisse dictum ligula turpis, vehicula convallis orci aliquet quis. Integer nunc risus, suscipit sit amet condimentum nec, cursus ut mauris. Quisque bibendum arcu erat, sit amet lobortis est ullamcorper ut. Aliquam erat volutpat. Fusce venenatis augue a nunc lobortis ullamcorper ac sed erat.
-      </p>
+      <div class="site-intro-img">
+        <img src="assets/images/test_image.png"  alt="bunny reading book">
+      </div>
+      <div class="site-intro-p">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, dui ac semper laoreet, lacus massa laoreet lorem, nec viverra augue metus quis tellus. Integer ac sem non orci gravida ullamcorper. Suspendisse dictum ligula turpis, vehicula convallis orci aliquet quis. 
+        </p>
+      </div>
     </div>
-    {% for post in site.posts %}
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    {% endfor %}
+    <div class="article-links">
+      {% for post in site.posts %}
+        <div class="collapsible">
+            <hr>
+          <div class="link">
+            <a href="{{ post.url }}" >{{ post.title }}</a>
+          </div>
+        </div>
+        <div class="article-info">
+          <div class="info-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, dui ac snemper laoreet, lacus massa laoreet lorem, nec viverra augue metus quis tellus. Integer ac sem non orci gravida ullamcorper. Suspendisse dictum ligula turpis, vehicula convallis orci aliquet quis. 
+            </p>
+          </div>
+          <div class="info-img">
+            <img src="assets/images/test_image.png"  alt="bunny reading book">
+          </div>
+        </div>
+      {% endfor %}
+      <hr>
+    </div>
   </body>
 </html>

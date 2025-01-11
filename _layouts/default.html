@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <script src="/assets/js/collapsible.js"></script>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,9 +12,10 @@
     {% seo %}
   </head>
   <body>
-    <div class="header">
-      {% include navigation.html %}
+    {% include header.html %}
+    <div class="site-content">
+      {{ content }}
     </div>
-    {{ content }}
+    {% include footer.html %}
   </body>
 </html>
