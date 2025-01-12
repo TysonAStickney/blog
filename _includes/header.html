@@ -6,7 +6,7 @@
     <nav class="header">
       <div class="header-home">
         {% for item in site.data.header %}
-          {%if item.name == "Home" %}
+          {%if item.name == "home" %}
             <a href="{{ item.link }}">
               {{ item.name }}
             </a>
@@ -16,7 +16,7 @@
 
       <div class="header-other">
         {% for item in site.data.header %}
-          {%unless item.name == "Home" %}
+          {%unless item.name == "home" %}
             <a href="{{ item.link }}" >
               {{ item.name }}
             </a>
