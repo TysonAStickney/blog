@@ -1,0 +1,21 @@
+---
+layout: sidebar 
+title: blog
+---
+<p id="archive-title">Archive</p>
+
+<div id="post-archive">
+    <div id="archive-year">
+	<p>2025</p>
+    </div>
+    <div id="archive-links">
+	{% for post in site.posts %}
+	    <p class="rb-link">
+	    <a class="green" href="{{ post.url }}" >
+	      {{ post.title }}
+	    </a>
+	    &nbsp; {{ post.date | date: "%b %d" }}
+	    </p>
+	{% endfor %}
+    </div>
+</div>

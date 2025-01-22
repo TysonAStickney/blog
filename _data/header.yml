@@ -1,6 +1,12 @@
 - name: home
   link: /
+  color: yellow
 - name: about
   link: /about.html
+  color: blue
+- name: blog 
+  link: /blog.html
+  color: red
+
 
 

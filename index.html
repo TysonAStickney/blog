@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: default 
+title: home
 ---
 
 <!DOCTYPE html>
@@ -7,28 +8,36 @@ layout: default
   <head>
   </head>
   <body>
-    <h1 class="site-title">
-      Lorem dolor <br> consectetur elit
-    </h1>
-    <div class="site-intro">
-      <p>Lorem ipsum olor sit amet, consectetur adipiscing elit. Vestibulum fermentum, dui ac semper laoreet, lacus massa laoreet lorem, nec viverra augue metus quis tellus. Integer ac sem non orci gravida ullamcorper. Suspendisse dictum ligula turpis, vehicula convallis orci aliquet quis. 
-      </p>
-    </div>
-    <hr>
-    <div class="site-post-section">
-      <p class="site-post-year">2025</p>
-      <div class="site-post-links">
-        {% for post in site.posts %}
-            <div class="site-post-link">
-              <p>
-                <a href="{{ post.url }}" >
-                  <strong>{{ post.title }}</strong>
-                </a>
-                {{ post.date | date: "%b %d" }}
-              </p>
-            </div>
-        {% endfor %}
-      </div>
-    </div>
+      <div class="home-page-content">
+	  <div id="home-content">
+	      <div class="title">
+		  <p>Statistics For Good</p>
+	      </div>
+	      <div class="box-intro">
+		  <p>Theories on the use of statistics and related technologies for the betterment of all things living.</p>
+	      </div>
+	      <div class="box-nav">
+		  <div class="nav-about">
+		      <a class="blue" href="../about.html">[about]</a>
+		      <p>learn about me!</p>
+		  </div>
+		  <div class="nav-blogs">
+		      <a class="red" href="../blog.html">[blog]</a> <br>
+		      <p>check out my blog!</p>
+		  </div>
+	      </div>
+	      <div class="box-rb">
+		  <p id="rb-title">- recent posts -</p> 
+		{% for post in site.posts  limit:3 %}
+			<p class="rb-link">
+			<a class="green" href="{{ post.url }}" >
+			  {{ post.title }}
+			</a>
+			&nbsp; {{ post.date | date: "%b %d" }}
+			</p>
+		{% endfor %}
+	      </div>
+	    </div>
+	</div>
   </body>
 </html>
