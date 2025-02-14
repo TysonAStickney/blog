@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<!Doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    <div class="post-content">
+      {{ content }}
+
+      <div class="post-nav">
+	<div class="nav-prev">
+	  {% if page.previous.url %}
+	    <a href={{ page.previous.url }}>
+	      < {{ page.previous.title }}
+	    </a>
+	  {% endif %}
+	</div>
+	<div class="nav-next">
+	  {% if page.next.url %}
+	    <a href={{ page.next.url }}>
+		{{ page.next.title }} >
+	    </a>
+	  {% endif %}
+	</div>
+      </div>
+    </div>
+  </body>
+</html>
