@@ -1,21 +1,26 @@
 ---
-layout: sidebar 
-title: blog
+layout: default 
+title: home
 ---
-<p id="archive-title">Archive</p>
 
-<div id="post-archive">
-    <div id="archive-year">
-	<p>2025</p>
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <p id="archive-title">archive</p>
+    <div class="archive-body">
+      {% for post in site.posts %}
+	<hr>
+	<a href="{{ post.url }}" class="archive-link">
+	  <div class="link-info">
+	      <i>{{ post.title }}</i>
+	    &nbsp;   
+	    {{ post.date | date: "%b %d" }}
+	  </div>
+	  <img src="../assets/images/arrow-upright.svg" class="link-arrow"/>
+	</a>
+      {% endfor %}
     </div>
-    <div id="archive-links">
-	{% for post in site.posts %}
-	    <p class="rb-link">
-	    <a class="green" href="{{ post.url }}" >
-	      {{ post.title }}
-	    </a>
-	    &nbsp; {{ post.date | date: "%b %d" }}
-	    </p>
-	{% endfor %}
-    </div>
-</div>
+  </body>
+</html>

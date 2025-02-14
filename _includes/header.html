@@ -1,31 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  </head>
-  <body>
-    <nav class="header">
-      <div class="header-home">
-        {% for item in site.data.header %}
-          {%if item.name == "home" %}
-            <a href="{{ item.link }}">
-              {{ item.name }}
-            </a>
-          {% endif %}
-        {% endfor %}
-      </div>
-
-      <div class="header-other">
-        {% for item in site.data.header %}
-          {%unless item.name == "home" %}
-            <a href="{{ item.link }}" >
-              {{ item.name }}
-            </a>
-          {% endunless %}
-        {% endfor %}
-      </div>
-    </nav>
-  </body>
-</html>
-
-
-
+<div id="header">
+  <a href="/index.html" id="home-icon">*</a>
+  <div id="header-nav">
+    <a href="/about.html" class="header-link">about</a> \
+    <a href="/blog.html" class="header-link">blog</a> \
+    <a href="/contact.html" class="header-link">contact</a>
+  </div>
+</div>

@@ -8,36 +8,7 @@ title: home
   <head>
   </head>
   <body>
-      <div class="home-page-content">
-	  <div id="home-content">
-	      <div class="title">
-		  <p>Statistics For Good</p>
-	      </div>
-	      <div class="box-intro">
-		  <p>Theories on the use of statistics and related technologies for the betterment of all things living.</p>
-	      </div>
-	      <div class="box-nav">
-		  <div class="nav-about">
-		      <a class="blue" href="../about.html">[about]</a>
-		      <p>learn about me!</p>
-		  </div>
-		  <div class="nav-blogs">
-		      <a class="red" href="../blog.html">[blog]</a> <br>
-		      <p>check out my blog!</p>
-		  </div>
-	      </div>
-	      <div class="box-rb">
-		  <p id="rb-title">- recent posts -</p> 
-		{% for post in site.posts  limit:3 %}
-			<p class="rb-link">
-			<a class="green" href="{{ post.url }}" >
-			  {{ post.title }}
-			</a>
-			&nbsp; {{ post.date | date: "%b %d" }}
-			</p>
-		{% endfor %}
-	      </div>
-	    </div>
-	</div>
+    <p id="home-intro">
+    Hi, I'm <a href="/about.html" class="text-link">Tyson Stickney</a>. I'm a college student living in Vermont, USA. I am studying statistics and run a <a href="/blog.html" class="text-link">blog</a> on all things public health.
   </body>
 </html>
