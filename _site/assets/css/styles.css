@@ -1,8 +1,9 @@
 body {
-  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: Host Grotesk, IBM Plex Sans;
-  font-size: 4em;
-  margin: 0 0.5em 0 0.5em; }
+  margin: 0; }
 
 a {
   color: black;
@@ -11,6 +12,9 @@ a {
 
 a:hover {
   opacity: 0.6; }
+
+hr {
+  border: 1px black solid; }
 
 .site-content {
   margin: 0 1em 0 1em; }
@@ -27,13 +31,11 @@ a:hover {
 #header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
-
-#home-icon {
-  font-size: 1.5em; }
+  justify-content: space-between;
+  margin: 0 0.5em 0 0.5em; }
 
 #home-intro {
-  margin: 0.5em 0 0 0; }
+  margin: 0.5em 0 1em 0; }
 
 #header-nav {
   font-size: 0.3em;
@@ -69,17 +71,6 @@ a:hover {
   height: 1.1em;
   width: auto; }
 
-#about-body {
-  display: flex;
-  flex-direction: row; }
-
-#about-info {
-  font-size: 0.55em;
-  margin: 0 0 0 2em; }
-
-#profile-img {
-  height: 6em; }
-
 .post-content {
   font-size: 0.5em; }
 
@@ -98,3 +89,116 @@ a:hover {
 
 #contact-text {
   font-size: 0.75em; }
+
+#footer {
+  margin: auto 0 0 0;
+  color: white;
+  background-color: black;
+  font-size: 0.35em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+#footer-copywrite {
+  margin: 0 0 0 1em; }
+
+#footer-attr {
+  margin: 0 1em 0 0; }
+
+.text-link-f {
+  text-decoration: underline;
+  transition: none;
+  color: white; }
+
+.text-link-f:hover {
+  background-color: white;
+  color: black;
+  opacity: 1; }
+
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 2em; }
+
+  .site-content {
+    margin-top: 1.5em; }
+
+  #header-nav {
+    font-size: 0.6em;
+    margin: 2em 0.5em 0 0; }
+
+  #home-icon {
+    font-size: 2em;
+    margin: 0 0 0 0.25em; }
+
+  .post-content {
+    font-size: 0.65em; }
+
+  .post-nav {
+    flex-direction: column; }
+
+  .nav-prev {
+    width: 100%;
+    margin: 0 0 1em 0; }
+
+  .nav-next {
+    width: 100%; }
+
+  #about-body {
+    flex-direction: column; }
+
+  #about-info {
+    font-size: 0.65em;
+    margin: 1em 0 1em 0; }
+
+  #profile-img {
+    max-width: 100%; }
+
+  .archive-year {
+    font-size: 0.75em; }
+
+  #archive-body {
+    font-size: 0.75em; } }
+@media only screen and (min-width: 500px) {
+  body {
+    font-size: 3em; }
+
+  #header-nav {
+    font-size: 0.5em;
+    margin: 2em 0.5em 0 0; }
+
+  #home-icon {
+    font-size: 1.5em; }
+
+  #about-info {
+    font-size: 0.65em; }
+
+  #profile-img {
+    max-width: 100%; } }
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 4em; }
+
+  #header-nav {
+    font-size: 0.4em;
+    margin: 2em 2em 0 0; }
+
+  #home-icon {
+    font-size: 1.5em; }
+
+  #about-body {
+    display: flex;
+    flex-direction: row; }
+
+  #about-info {
+    font-size: 0.45em;
+    margin: 0 0 1em 2em; }
+
+  #profile-img {
+    height: 6em; } }
+@media only screen and (min-width: 1200px) {
+  #about-info {
+    font-size: 0.60em; }
+
+  #home-icon {
+    font-size: 1em; } }

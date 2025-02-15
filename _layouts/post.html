@@ -14,14 +14,14 @@ layout: default
 	<div class="nav-prev">
 	  {% if page.previous.url %}
 	    <a href={{ page.previous.url }}>
-	      < {{ page.previous.title }}
+	      < <i> {{ page.previous.title }} </i>
 	    </a>
 	  {% endif %}
 	</div>
 	<div class="nav-next">
 	  {% if page.next.url %}
 	    <a href={{ page.next.url }}>
-		{{ page.next.title }} >
+	      <i> {{ page.next.title }} </i> >
 	    </a>
 	  {% endif %}
 	</div>
