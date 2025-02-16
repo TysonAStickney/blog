@@ -8,7 +8,17 @@ layout: default
   </head>
   <body>
     <div class="post-content">
-      {{ content }}
+      <b> {{ page.title }} </b>
+      <br>
+      <i> {{ page.sub-title }} </i>
+
+      <hr>
+
+      <div class="post-body">
+	{{ content }}
+      </div>
+
+      <hr>
 
       <div class="post-nav">
 	<div class="nav-prev">

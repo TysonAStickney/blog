@@ -4,11 +4,6 @@ title: A Familiar Notion
 sub-title: On the strangeness of accepting a past belief 
 ---
 
-__{{ page.title }}__ \
-*{{ page.sub-title }}* 
-
-<hr>
-
 The life that I live is one shaped by ideas and opinions that I hold. After all, what is life but the small actions I take, tempered by the means by which I have to take them? And, how is it that you suppose those actions are chosen? As such, I regard these ideas and opinions as important&mdash;fundamentally so, in fact&mdash;and thus a change in them necessitates a good deal of contrary information. Whether or not a change in ideal (if I may call them that) *should* require hefty evidence against it is perhaps debatable, but not especially pertinent to what I'm trying to say. What I *am* trying to say is that these changes are not to be taken lightly. A change in ideal is a change of self&mdash;permanent and consequential.
 
 And yet, I have on occasion found old, retired ideals cropping up over the horizon on the path of ethical development. It is a strange experience to be faced with those past views. I am almost always wary, hesitant to accept them as I once had. These ideas have no memory of our past&mdash;but I do&mdash;and the pain of betrayal I once felt from them is not easily forgotten. That said, I do oftentimes come to accept them once more. Whether out of forgiveness or weakness I cannot say, but I am usually happy to have them back.
@@ -25,4 +20,3 @@ This is what I've been finding with my own understanding of the world. This circ
 
 It's frustrating. It sometimes even feels hopeless. But things do change, and ignorant acceptance is no way to live.
 
-<hr>

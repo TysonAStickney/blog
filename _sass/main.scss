@@ -21,7 +21,7 @@ hr {
 }
 
 .site-content {
-  margin: 0 1em 0 1em;
+  margin: 0.5em 1em 0 1em;
 }
 
 .text-link {
@@ -43,7 +43,7 @@ hr {
 }
 
 #home-intro {
-  margin: 0.5em 0 1em 0;
+  margin: 0;
 }
 
 #header-nav {
@@ -151,7 +151,7 @@ hr {
   }
 
   .site-content {
-    margin-top: 1.5em;
+    margin-top: 1em;
   }
   
   #header-nav {
@@ -224,6 +224,17 @@ hr {
   #profile-img {
     max-width: 100%;
   }
+
+  .post-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post-body p {
+    width: 70%;
+    font-size: 0.8em;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -253,6 +264,15 @@ hr {
   #profile-img {
     height: 6em;
   }
+
+  .post-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post-body p {
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -262,5 +282,16 @@ hr {
 
   #home-icon {
     font-size: 1em;
+  }
+
+  .post-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post-body p {
+    width: 60%;
+    font-size: 0.8em;
   }
 }

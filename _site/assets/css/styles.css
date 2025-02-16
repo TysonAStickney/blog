@@ -17,7 +17,7 @@ hr {
   border: 1px black solid; }
 
 .site-content {
-  margin: 0 1em 0 1em; }
+  margin: 0.5em 1em 0 1em; }
 
 .text-link {
   text-decoration: underline;
@@ -35,7 +35,7 @@ hr {
   margin: 0 0.5em 0 0.5em; }
 
 #home-intro {
-  margin: 0.5em 0 1em 0; }
+  margin: 0; }
 
 #header-nav {
   font-size: 0.3em;
@@ -121,7 +121,7 @@ hr {
     font-size: 2em; }
 
   .site-content {
-    margin-top: 1.5em; }
+    margin-top: 1em; }
 
   #header-nav {
     font-size: 0.6em;
@@ -174,7 +174,16 @@ hr {
     font-size: 0.65em; }
 
   #profile-img {
-    max-width: 100%; } }
+    max-width: 100%; }
+
+  .post-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .post-body p {
+    width: 70%;
+    font-size: 0.8em; } }
 @media only screen and (min-width: 992px) {
   body {
     font-size: 4em; }
@@ -195,10 +204,24 @@ hr {
     margin: 0 0 1em 2em; }
 
   #profile-img {
-    height: 6em; } }
+    height: 6em; }
+
+  .post-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 @media only screen and (min-width: 1200px) {
   #about-info {
     font-size: 0.60em; }
 
   #home-icon {
-    font-size: 1em; } }
+    font-size: 1em; }
+
+  .post-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .post-body p {
+    width: 60%;
+    font-size: 0.8em; } }
