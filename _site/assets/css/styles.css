@@ -3,10 +3,15 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Host Grotesk, IBM Plex Sans;
-  margin: 0; }
+  margin: 0;
+  background-color: var(--c-white);
+  color: var(--c-black);
+  --c-white: #dddcd7;
+  --c-black: #2b2b2b;
+  --c-blue: #6320ee; }
 
 a {
-  color: black;
+  color: var(--c-black);
   text-decoration: none;
   transition: 0.15s; }
 
@@ -14,18 +19,18 @@ a:hover {
   opacity: 0.6; }
 
 hr {
-  border: 1px black solid; }
+  border: 1px var(--c-black) solid; }
 
 .site-content {
-  margin: 0.5em 1em 0 1em; }
+  margin: 0.5em 1em 0.75em 1em; }
 
 .text-link {
   text-decoration: underline;
   transition: none; }
 
 .text-link:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--c-blue);
+  color: var(--c-white);
   opacity: 1; }
 
 #header {
@@ -35,7 +40,10 @@ hr {
   margin: 0 0.5em 0 0.5em; }
 
 #home-intro {
-  margin: 0; }
+  margin: 0.5em 0 0 0; }
+
+#home-icon {
+  color: var(--c-blue); }
 
 #header-nav {
   font-size: 0.3em;
@@ -64,9 +72,6 @@ hr {
   justify-content: space-between;
   transition: 0.15s; }
 
-.archive-link:hover {
-  opacity: 0.6; }
-
 .link-arrow {
   height: 1.1em;
   width: auto; }
@@ -88,12 +93,13 @@ hr {
   text-align: right; }
 
 #contact-text {
-  font-size: 0.75em; }
+  font-size: 0.75em;
+  margin-bottom: 0em; }
 
 #footer {
   margin: auto 0 0 0;
-  color: white;
-  background-color: black;
+  color: var(--c-white);
+  background-color: var(--c-black);
   font-size: 0.35em;
   width: 100%;
   display: flex;
@@ -107,13 +113,15 @@ hr {
   margin: 0 1em 0 0; }
 
 .text-link-f {
+  height: 100%;
+  display: inline-block;
   text-decoration: underline;
   transition: none;
-  color: white; }
+  color: var(--c-white); }
 
 .text-link-f:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--c-white);
+  color: var(--c-black);
   opacity: 1; }
 
 @media only screen and (max-width: 500px) {
@@ -171,7 +179,8 @@ hr {
     font-size: 1.5em; }
 
   #about-info {
-    font-size: 0.65em; }
+    font-size: 0.65em;
+    margin-bottom: 0em; }
 
   #profile-img {
     max-width: 100%; }
@@ -201,7 +210,7 @@ hr {
 
   #about-info {
     font-size: 0.45em;
-    margin: 0 0 1em 2em; }
+    margin: 0 0 0 2em; }
 
   #profile-img {
     height: 6em; }
