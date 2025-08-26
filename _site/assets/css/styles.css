@@ -2,16 +2,17 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: Host Grotesk, IBM Plex Sans;
+  font-family: "Gentium Book Plus";
   margin: 0;
   background-color: var(--c-white);
   color: var(--c-black);
-  --c-white: #dddcd7;
+  --c-white: white;
   --c-black: #2b2b2b;
-  --c-blue: #6320ee; }
+  --c-blue: #6320ee;
+  --c-orange: #de6e3e; }
 
 a {
-  color: var(--c-black);
+  color: var(--c-orange);
   text-decoration: none;
   transition: 0.15s; }
 
@@ -26,7 +27,7 @@ hr {
 
 .text-link {
   text-decoration: underline;
-  transition: none; }
+  transition: 0.15s; }
 
 .text-link:hover {
   background-color: var(--c-blue);
@@ -37,13 +38,10 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 0.5em 0 0.5em; }
+  padding: 0 0.5em 0 0.5em; }
 
 #home-intro {
   margin: 0.5em 0 0 0; }
-
-#home-icon {
-  color: var(--c-blue); }
 
 #header-nav {
   font-size: 0.3em;
@@ -51,6 +49,9 @@ hr {
   margin: 2em 2em 0 0; }
 
 .header-link {
+  padding-left: 1em;
+  color: var(--c-black);
+  font-style: italic;
   transition: 0.15s; }
 
 .header-link:hover {
@@ -61,6 +62,7 @@ hr {
 
 .archive-year {
   font-size: 0.5em;
+  font-style: italic;
   margin: 0; }
 
 #archive-body {
@@ -116,7 +118,7 @@ hr {
   height: 100%;
   display: inline-block;
   text-decoration: underline;
-  transition: none;
+  transition: 0.15s;
   color: var(--c-white); }
 
 .text-link-f:hover {
@@ -135,9 +137,9 @@ hr {
     font-size: 0.6em;
     margin: 2em 0.5em 0 0; }
 
-  #home-icon {
-    font-size: 2em;
-    margin: 0 0 0 0.25em; }
+  #home-icon-img {
+    height: 2em;
+    margin: 0.25em 0 0 0; }
 
   .post-content {
     font-size: 0.65em; }
@@ -175,8 +177,9 @@ hr {
     font-size: 0.5em;
     margin: 2em 0.5em 0 0; }
 
-  #home-icon {
-    font-size: 1.5em; }
+  #home-icon-img {
+    height: 1.5em;
+    margin: 0.25em 0 0 0; }
 
   #about-info {
     font-size: 0.65em;
@@ -201,8 +204,9 @@ hr {
     font-size: 0.4em;
     margin: 2em 2em 0 0; }
 
-  #home-icon {
-    font-size: 1.5em; }
+  #home-icon-img {
+    height: 1.5em;
+    margin: 0.25em 0 0 0; }
 
   #about-body {
     display: flex;
@@ -223,8 +227,9 @@ hr {
   #about-info {
     font-size: 0.60em; }
 
-  #home-icon {
-    font-size: 1em; }
+  #home-icon-img {
+    height: 1.5em;
+    margin: 0.25em 0 0 0; }
 
   .post-body {
     display: flex;
